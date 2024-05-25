@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.carousel-inner{
+    width:100%;
+    max-height: 400px !important;
+}
+
+#myCarousel{
+    max-width:100vw;
+    max-height: 400px !important;
+}  
+
+#whole-wrapper{
+    display:flex;
+    column-gap: 30px;
+    margin: 0px 20px;
+}
+#latest-news{
+    width:30%;
+}
+
+#news-carosel{
+    width:70%;
+}
+
+h5 {
+    font-family: sans-serif;
+    font-weight: 800;
+}
+h3 {
+    font-family: "Gill Sans Extrabold", sans-serif;
+    font-weight: 800;
+    font-size: 2em;
+    color: #0d80e5;
+}
+
+#card-wrapper{
+    display:flex;
+    flex-wrap:wrap;
+    column-gap: 10px;
+    row-gap:10px;
+   
+}
+.card{
+    width:18rem;
+}
+.card > img {
+    height:100px;
+}
+
+#top-picks-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+}
+.recommend{
+    width:60%;
+}
+.picks{
+    width:40%;
+}
+.d-flex{
+    column-gap: 15px;
+}
+.menu > li {
+    display:block;
+    list-style-type: none;
+    margin:10px;
+    padding:10px;
+}
+.menu li a{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    line-height: 20px;
+}
+.offcanvas{
+    width:25vw !important;
+}
+.category-list{
+    align-items: center;
+    column-gap: 20px !important;
+}
+#category-name{
+    color: #064983;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin:40px;
+}
+#news-list{
+    margin:20px;
+}
+
+.nav-item > button {
+    text-decoration: none!important;
+    color:#555555;
+}
+
+footer{
+    height:5vh;
+    width:100vw;
+    display:block;
+    background-color:#5da6e7;
+    color:rgb(25 25 24)!important;
+    text-align: center;
+    font-size: 0.5em!important;
+    
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #whole-wrapper{
+        display: block;
+    }
+    #latest-news{
+        width:75vw;
+    }
+    #top-picks-flex{
+        display: block;
+    }
+    #card-wrapper{
+        margin:0 50px;
+    }
+    .card-body h5{
+        font-size: 1rem;
+    }
+    .recommend{
+        width:80vw;
+    }
+    .picks{
+        width:80vw
+    }
+    .offcanvas{
+        width:60vw !important;
+    }
+    .category-list{
+        display:block !important;
+    }
+    .landing-list h3{
+        font-size: 1em;
+    }
+    .landing-list p{
+        font-size: o.5em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up)*/
+@media only screen and (min-width: 600px) and (max-width:992px) {
+    #top-picks-flex{
+        display:block;
+    }
+    .recommend{
+        width:80vw;
+    }
+    .picks{
+        width:80vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:992px)
+{
+    .picks{
+        width:65vw;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+/*@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*@media only screen and (min-width: 1200px) {...} */
